@@ -7,7 +7,7 @@ function angkaPalindrome(num) {
                 a+=str[i];
             }
         if (str === a) {
-            return str;
+            return Number(str);
         }
     }
   }
