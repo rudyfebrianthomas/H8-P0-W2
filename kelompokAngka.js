@@ -6,16 +6,21 @@ function mengelompokkanAngka(arr) {
     var hasil=[];
 
     for (var i=0;i<arr.length;i++){
-        if(arr[i]%2==0){
-            if(arr[i]%3==0){
+        if (arr[i]%2!==0){
+            if (arr[i]%3==0){
+                kel3.push(arr[i]);
+            }
+            else{
+                ganjil.push(arr[i]);
+            }
+        }
+        else{
+            if (arr[i]%3==0){
                 kel3.push(arr[i]);
             }
             else{
                 genap.push(arr[i]);
             }
-        }
-        else{
-            ganjil.push(arr[i]);
         }
     }
     hasil.push(genap);
