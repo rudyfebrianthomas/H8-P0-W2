@@ -8,7 +8,7 @@ function groupAnimals(animals) {
         if(a.length === 0){
             a.push([animals[i]]) //array awal
         }
-        else if(a[b][0][0] === animals[i][0][0]){ //cek huruf awalan
+        else if(a[b][0][0] === animals[i][0]){ //cek huruf awalan
             a[b].push(animals[i]) //jika sama push
         } 
         else{
