@@ -6,6 +6,9 @@ function angkaPrima(angka) {
             a=false;
         }
     }
+    if(angka===1){
+        a=false;
+    }
     return a;
   }
   
